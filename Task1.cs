@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Animal
+class Task1
 {
     public virtual void MakeSound()
     {
@@ -8,7 +8,7 @@ class Animal
     }
 }
 
-class Dog : Animal
+class Dog : Task1
 {
     public override void MakeSound()
     {
@@ -16,7 +16,7 @@ class Dog : Animal
     }
 }
 
-class Cat : Animal
+class Cat : Task1
 {
     public override void MakeSound()
     {
@@ -29,7 +29,7 @@ class Program
     static void Main(string[] args)
     {
         // Create instances
-        Animal genericAnimal = new Animal();
+        Task1 genericAnimal = new Task1();
         Dog dog = new Dog();
         Cat cat = new Cat();
 
